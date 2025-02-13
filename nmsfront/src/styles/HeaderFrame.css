@@ -3,26 +3,31 @@
 div#headerFrame {
   width: 100%;
   padding: 15px 20px;
-  background-color: #000;
+  /* background-color: #000; */
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+}
+
+div#headerFrame div#logoPosition {
+  width: 900px;
+  /* border: 1px solid #000; */
+  display: flex;
+  align-items: baseline;
 }
 
 div#headerFrame p {
-  color: #fff;
-  font-size: 34px;
+  font-size: 37px;
   font-family: "Antonio", serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
 }
 
-div#headerFrame button {
+/* div#headerFrame button {
   font-size: 25px;
   font-family: "Anton", serif;
   font-weight: 400;
   font-style: normal;
   height: 50px;
   padding: 0 20px;
-}
+} */
