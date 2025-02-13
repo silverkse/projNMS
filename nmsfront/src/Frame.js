@@ -13,6 +13,8 @@ import "./styles/Logo.css";
 import "./styles/HeaderFrame.css";
 import "./styles/Landing.css";
 import "./styles/ServiceConnection.css";
+import "./styles/Main.css";
+import "./styles/GnbMenu.css";
 
 function Frame() {
   return (

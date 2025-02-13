@@ -2,7 +2,7 @@
   v2.0 | 20110126
   License: none (public domain)
 */
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -58,4 +58,18 @@ table {
 
 div#root {
   width: 100%;
+}
+
+.dFlex {
+  display: flex;
+}
+
+/* 기본 스크롤바 숨기기 */
+::-webkit-scrollbar {
+  display: none;
+}
+/* Firefox용 기본 스크롤바 숨기기 */
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
