@@ -30,23 +30,6 @@ function GnbMenu({setSelectedMenu, selectedMenu}) {
         ))}
       </div>
     </div>
-    // <div id="gnbFrame">
-    //   <div id="gnbBar" className="dflex">
-    //     <div>World</div>
-    //     <div>|</div>
-    //     <div>Business</div>
-    //     <div>|</div>
-    //     <div>Culture</div>
-    //     <div>|</div>
-    //     <div>Entertainment & Arts</div>
-    //     <div>|</div>
-    //     <div>Health</div>
-    //     <div>|</div>
-    //     <div>Science & Environment</div>
-    //     <div>|</div>
-    //     <div>Sports</div>
-    //   </div>
-    // </div>
   );
 }
 

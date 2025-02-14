@@ -10,12 +10,13 @@ function Main() {
 
   return (
     <>
-      <HeaderFrame></HeaderFrame>
       <GnbMenu
         selectedMenu={selectedMenu}
         setSelectedMenu={setSelectedMenu}
       ></GnbMenu>
-      <h1 id="newsHeader">{RSS_HEADER[selectedMenu]} News Feed(rss2json API)</h1>
+      <h1 id="newsHeader">
+        {RSS_HEADER[selectedMenu]} News Feed(rss2json API)
+      </h1>
       <MainArticle selectedMenu={selectedMenu}></MainArticle>
     </>
   );

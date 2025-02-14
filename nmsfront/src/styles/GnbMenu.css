@@ -32,7 +32,7 @@ div#gnbFrame div#gnbBar div:nth-child(2n) {
 }
 div#gnbFrame div#gnbBar div:nth-child(2n-1):hover {
   color: #000;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   cursor: pointer;
 }
 
