@@ -47,13 +47,15 @@ subprojects {
 		testImplementation 'org.springframework.security:spring-security-test'
 		testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
+		//테스트용
+		runtimeOnly 'com.h2database:h2' // H2 의존성 추가
 	}
 }
-
-bootJar {
-	enabled(true)
-	mainClass.set('com.nms.nms_user.NmsUserApplication')
-}
+//
+//bootJar {
+//	enabled=true	//bootJar 활성화
+//	mainClass.set('com.nms.nms_user.NmsUserApplication')
+//}
 
 jar {
 	enabled = true

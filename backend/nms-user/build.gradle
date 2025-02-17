@@ -12,12 +12,16 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.security:spring-security-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	//테스트용
+	runtimeOnly 'com.h2database:h2' // H2 의존성 추가
 }
 
-tasks.named('bootRun') {
+
+bootJar {
+	enabled = true
 	mainClass.set('com.nms.nms_user.NmsUserApplication') // 정확한 경로 및 클래스 이름
 }
 
-tasks.named('bootJar') {
-	mainClass.set('com.nms.nms_user.NmsUserApplication') // 정확한 경로 및 클래스 이름
+jar {
+	enabled = true // 필요에 따라 설정
 }

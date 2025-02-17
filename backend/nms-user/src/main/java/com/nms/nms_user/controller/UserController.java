@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/user")
+@RequestMapping("/api/user")//스프링 부트 내부에선 /user로만 해도 됌
 @RequiredArgsConstructor
 public class UserController {
 

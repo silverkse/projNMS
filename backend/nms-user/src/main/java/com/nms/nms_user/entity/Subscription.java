@@ -12,7 +12,7 @@ import lombok.*;
 public class Subscription {
 
     @Id
-    @Generated(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
