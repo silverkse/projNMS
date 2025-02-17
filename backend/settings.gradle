@@ -1,0 +1,2 @@
+include ':common', ':nms-user'
+rootProject.name = 'NMS-PRJ'

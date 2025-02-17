@@ -1,0 +1,23 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.3.8' // 또는 사용하는 Spring Boot 버전
+	id 'io.spring.dependency-management' version '1.1.7'
+}
+
+dependencies {
+	implementation project(":common")
+	implementation 'org.springframework.boot:spring-boot-starter-oauth2-resource-server'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'com.auth0:java-jwt:4.4.0'  // JWT 토큰 검증
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.security:spring-security-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.named('bootRun') {
+	mainClass.set('com.nms.nms_user.NmsUserApplication') // 정확한 경로 및 클래스 이름
+}
+
+tasks.named('bootJar') {
+	mainClass.set('com.nms.nms_user.NmsUserApplication') // 정확한 경로 및 클래스 이름
+}

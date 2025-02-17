@@ -1,0 +1,41 @@
+div#gnbFrame{
+  padding: 4px;
+  margin: 10px 0;
+  position: sticky;
+  top: 10px;
+  left: 0;
+  background-color: #000;
+  z-index: 10;
+}
+
+div#gnbFrame * {
+  color: #999;
+  font-size: 24px;
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+}
+
+div#gnbFrame div#gnbBar {
+  width: 1100px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+div#gnbFrame div#gnbBar div {
+  padding: 5px;
+}
+div#gnbFrame div#gnbBar div:nth-child(2n) {
+  font-weight: 700;
+  padding: 5px 2px;
+}
+div#gnbFrame div#gnbBar div:nth-child(2n-1):hover {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+
+#gnbFrame div#gnbBar div.selected {
+  color: #fff;
+}
