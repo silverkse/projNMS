@@ -27,9 +27,6 @@ function Main() {
     fetchHeader();
   }, [selectedMenu]);
 
-
-
-
   return (
     <>
       <GnbMenu

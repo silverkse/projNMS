@@ -1,0 +1,46 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.3.8'  // 사용 중인 Spring Boot 버전에 맞게 수정
+	id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'com.nms'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+
+	implementation project(':common')
+	// Spring Boot 의존성
+	implementation project(':nms-mail')
+	implementation 'org.springframework.boot:spring-boot-starter-webflux'  // WebClient 의존성
+	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'  // OAuth2 인증 관련 의존성 (필요시)
+	implementation 'org.springframework.boot:spring-boot-starter-security'  // Spring Security (필요시 인증 및 보안)
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'  // JPA (필요시 데이터베이스 연동)
+
+
+
+	// 로깅 관련 의존성 (로그출력을 위해 추가할 수 있음)
+	implementation 'org.springframework.boot:spring-boot-starter-logging'
+
+	// 테스트 관련 의존성
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'  // 기본 테스트 의존성
+	testImplementation 'org.springframework.security:spring-security-test'  // 보안 관련 테스트 의존성
+}
+
+tasks.named('bootRun') {
+	mainClass.set('com.nms.gateway.NmsGatewayApplication')  // 실제 main 클래스 경로
+}
+
+tasks.named('bootJar') {
+	mainClass.set('com.nms.gateway.NmsGatewayApplication')  // 실제 main 클래스 경로
+}
