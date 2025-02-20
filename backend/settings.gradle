@@ -1,0 +1,9 @@
+rootProject.name = 'NMS-PRJ'
+
+include ':common'
+project(':common').projectDir = new File(rootDir, 'common')
+
+include ':nms-user'
+include ':nms-gateway'
+include ':nms-mail'
+include ':nms-auth'

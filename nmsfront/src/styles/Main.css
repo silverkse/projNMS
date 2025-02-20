@@ -1,0 +1,48 @@
+div#main {
+  width: 100%;
+}
+
+div#mainArticle {
+  width: 900px;
+  margin: 0 auto;
+}
+
+h1#newsHeader {
+  font-size: 34px;
+  font-family: "Antonio", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  margin: 20px 0;
+}
+
+div#mainArticle div#contents {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+div#mainArticle div#contents div {
+  margin: 20px 0 0;
+  width: 32%;
+  border: 1px solid #000;
+}
+div#mainArticle div#contents div:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+div#mainArticle div#contents div p {
+  font-size: 20px;
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+
+  margin: 5px 0;
+}
+div#mainArticle div#contents div img {
+  width: 100%;
+  display: block;
+}

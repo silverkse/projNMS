@@ -1,0 +1,75 @@
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+.gradle
+build
+# Gradle 관련 불필요한 파일 제외
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+!gradlew
+!gradlew.bat
+
+# 빌드 아티팩트 제외
+build/
+out/
+bin/
+
+# IDE 관련 설정 제외
+.idea/
+*.iml
+
+# Gradle Wrapper 관련 파일
+backend/wrapper/
+backend/caches/
+backend/.gradle/
+
+# 기타 캐시 파일 제외
+backend/common/wrapper/
+backend/common/
+backend/nms-mail/
+
+*.log
+
+*.jar

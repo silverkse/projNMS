@@ -1,0 +1,52 @@
+div#headerFrame {
+  width: 100%;
+  padding: 15px 20px;
+  /* background-color: #000; */
+  display: flex;
+  justify-content: center;
+}
+
+div#headerFrame div#logoPosition {
+  width: 900px;
+  /* border: 1px solid #000; */
+  display: flex;
+  align-items: baseline;
+  position: relative;
+}
+
+div#headerFrame p {
+  /* color: #f80; */
+  font-size: 37px;
+  font-family: "Antonio", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+div#headerFrame div#mainPageBtnArea {
+  align-items: baseline;
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  display: flex;
+  gap: 4px;
+}
+div#headerFrame div#mainPageBtnArea button {
+  font-size: 24px;
+  font-family: "Antonio", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
+  width: 100px;
+  padding: 4px;
+
+  background-color: #fff;
+  border: 2.5px solid #000;
+}
+div#headerFrame div#mainPageBtnArea button:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #f80;
+  border: 2.5px solid #f80;
+}

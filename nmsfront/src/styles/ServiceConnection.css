@@ -1,0 +1,64 @@
+div#serviceConnection {
+    width: 900px;
+    padding: 60px 0 80px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    background-color: #000;
+}
+
+div#serviceConnection h1 {
+    color: #fff;
+    font-size: 30px;
+    font-family: "Antonio", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+}
+
+div#serviceConnection div#loginArea input:first-child {
+    margin-top: 15px;
+}
+
+div#serviceConnection input {
+    font-size: 20px;
+    padding: 4px;
+    width: 360px;
+    margin: 5px auto;
+    display: block;
+}
+
+div#serviceConnection button {
+    color: #fff;
+    font-size: 22px;
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    width: 360px;
+    padding: 4px;
+    display: block;
+    margin: 0 auto;
+
+    display: block;
+    background-color: #f80;
+    border: none;
+}
+div#serviceConnection button:hover {
+    cursor: pointer;
+    background-color: #c60;;
+}
+
+div#serviceConnection hr {
+    border-color: #fff;
+    margin: 40px auto;
+    width: 360px;
+}
+
+div#serviceConnection button#joinBtn {
+    margin-top: 15px;
+}
+
+div#serviceConnection div#guestArea input {
+    margin-top: 15px;
+}

@@ -1,0 +1,47 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.3.8'
+	id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'com.nms'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+bootJar{
+	enabled = true
+	mainClass.set('com.nms.nms_mail.NmsMailApplication')
+}
+bootRun{
+	mainClass='com.nms.nms_mail.NmsMailApplication'
+}
+dependencies {
+	implementation project(':common')
+	implementation 'org.springframework.boot:spring-boot-starter-mail'	//자바메일센더 사용
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'org.springframework.boot:spring-boot-starter-web'	//Rest APi 컨트롤서 사용
+
+	implementation 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+
+jar{
+	enabled=true
+}

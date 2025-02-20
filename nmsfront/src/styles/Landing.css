@@ -1,0 +1,47 @@
+div#landing {
+    background-color: #000;
+    padding-bottom: 40px;
+}
+
+h1#landingCatch {
+    color: #fff;
+    font-size: 64px;
+    font-family: "Antonio", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    padding: 90px 0 60px 0;
+}
+
+div#landingArticle {
+    width: 900px;
+    margin: 30px auto;
+}
+
+div#landingArticle p {
+    color: #aaa;
+    font-size: 34px;
+    font-family: "Antonio", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.3;
+}
+
+div#landingArticle button {
+    color: #fff;
+    font-size: 35px;
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 4px 26px;
+    display: block;
+    margin: 60px auto 0;
+    background-color: #f80;
+    border: none;
+}
+div#landingArticle button:hover {
+    cursor: pointer;
+    background-color: #c60;;
+}

@@ -1,0 +1,160 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.springframework.boot",
+    "module": "spring-boot-starter-security",
+    "version": "3.3.8",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.12"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter",
+          "version": {
+            "requires": "3.3.8"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-aop",
+          "version": {
+            "requires": "6.1.16"
+          }
+        },
+        {
+          "group": "org.springframework.security",
+          "module": "spring-security-config",
+          "version": {
+            "requires": "6.3.6"
+          }
+        },
+        {
+          "group": "org.springframework.security",
+          "module": "spring-security-web",
+          "version": {
+            "requires": "6.3.6"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-boot-starter-security-3.3.8.jar",
+          "url": "spring-boot-starter-security-3.3.8.jar",
+          "size": 4742,
+          "sha512": "04d46f9596d820ea0633f4fe67f8300b42e18d46f29c50fc729a8627223735ca1890f73aa7bdc866c409d7756bcc16a10a5fdf576958e600ba91f173724b1b55",
+          "sha256": "63602ca820b59541c665868b6938e9118a666dd124543967752bbeaf4afd1649",
+          "sha1": "56e55130b7908e71c68c26c643a983b0fa8e5192",
+          "md5": "c7b71b692dcd19446ba2ce2ae2ea2b56"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter",
+          "version": {
+            "requires": "3.3.8"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-aop",
+          "version": {
+            "requires": "6.1.16"
+          }
+        },
+        {
+          "group": "org.springframework.security",
+          "module": "spring-security-config",
+          "version": {
+            "requires": "6.3.6"
+          }
+        },
+        {
+          "group": "org.springframework.security",
+          "module": "spring-security-web",
+          "version": {
+            "requires": "6.3.6"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-boot-starter-security-3.3.8.jar",
+          "url": "spring-boot-starter-security-3.3.8.jar",
+          "size": 4742,
+          "sha512": "04d46f9596d820ea0633f4fe67f8300b42e18d46f29c50fc729a8627223735ca1890f73aa7bdc866c409d7756bcc16a10a5fdf576958e600ba91f173724b1b55",
+          "sha256": "63602ca820b59541c665868b6938e9118a666dd124543967752bbeaf4afd1649",
+          "sha1": "56e55130b7908e71c68c26c643a983b0fa8e5192",
+          "md5": "c7b71b692dcd19446ba2ce2ae2ea2b56"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spring-boot-starter-security-3.3.8-javadoc.jar",
+          "url": "spring-boot-starter-security-3.3.8-javadoc.jar",
+          "size": 4742,
+          "sha512": "04d46f9596d820ea0633f4fe67f8300b42e18d46f29c50fc729a8627223735ca1890f73aa7bdc866c409d7756bcc16a10a5fdf576958e600ba91f173724b1b55",
+          "sha256": "63602ca820b59541c665868b6938e9118a666dd124543967752bbeaf4afd1649",
+          "sha1": "56e55130b7908e71c68c26c643a983b0fa8e5192",
+          "md5": "c7b71b692dcd19446ba2ce2ae2ea2b56"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spring-boot-starter-security-3.3.8-sources.jar",
+          "url": "spring-boot-starter-security-3.3.8-sources.jar",
+          "size": 4742,
+          "sha512": "04d46f9596d820ea0633f4fe67f8300b42e18d46f29c50fc729a8627223735ca1890f73aa7bdc866c409d7756bcc16a10a5fdf576958e600ba91f173724b1b55",
+          "sha256": "63602ca820b59541c665868b6938e9118a666dd124543967752bbeaf4afd1649",
+          "sha1": "56e55130b7908e71c68c26c643a983b0fa8e5192",
+          "md5": "c7b71b692dcd19446ba2ce2ae2ea2b56"
+        }
+      ]
+    }
+  ]
+}
